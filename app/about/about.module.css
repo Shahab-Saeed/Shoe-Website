@@ -1,0 +1,208 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.about .heading {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.about .heading span {
+  color: purple;
+}
+
+.about .secondchild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+.about .secondchild .child1 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.about .secondchild .child1 .childa {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 450px;
+}
+
+.about .secondchild .child1 .childa img {
+  height: 100px;
+  width: 150px;
+  border: 1px solid rgb(243, 237, 237);
+  background: rgb(193, 107, 193);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(128, 0, 128, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.about .secondchild .child1 .childa img:hover {
+  transform: scale(1.05);
+}
+
+.about .secondchild .child1 .childb {
+  height: 300px;
+  width: 400px;
+  border: 3px solid purple;
+  box-shadow: 0 4px 10px rgba(128, 0, 128, 0.5);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #fff;
+}
+
+.about .secondchild .child1 .childb .preview {
+  height: 90%;
+  width: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.about .secondchild .child2{
+    height:350px;
+    width:500px;
+    border: 3px solid rgb(203, 103, 120);border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .secondchild .child2 .text{
+    font-size: 18px;
+    text-align: start;
+    padding: 10px 30px;
+    text-justify:kashida;
+}
+
+
+.about .thirdchild .btun{
+        /* height: 52px; */
+ /* overflow: hidden; */
+    padding: 5px 30px;
+    border: 1px solid rgb(142, 97, 105);
+     box-shadow: 0 4px 10px rgba(128, 0, 128, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.about .thirdchild .btun:hover {
+    background: purple;
+    color: white ;
+    font-weight: bolder;
+
+}
+/* ===== Responsive ===== */
+
+@media screen and (max-width: 1230px) {
+  .about .secondchild {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about .thirdchild .btun{
+    margin-top: 20px;
+  }
+
+}
+
+
+@media screen and (max-width: 1030px) {
+  
+
+  .about .thirdchild .btun{
+    margin-top: 20px;
+  }
+  .about .secondchild .child2 {
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about .secondchild {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+    /* margin-bottom: 40px; */
+  }
+
+  .about .secondchild .child1 {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .about .secondchild .child1 .childa {
+    flex-direction: row;
+    gap: 10px;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .about .secondchild .child1 .childa img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about .secondchild .child1 .childb {
+    width: 450px;
+    height: 200px;
+  }
+
+  .about .secondchild .child2 {
+    width: 90%;
+    height: auto;
+  }
+
+  .about .secondchild .child2 .text {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .about .heading {
+    font-size: 36px;
+  }
+
+  .about .thirdchild .btun{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about .heading {
+    font-size: 28px;
+  }
+
+  .about .secondchild .child1 .childa img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .about .secondchild .child1 .childb {
+    width: 200px;
+    height: 150px;
+  }
+
+  .about .secondchild .child2 .text {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

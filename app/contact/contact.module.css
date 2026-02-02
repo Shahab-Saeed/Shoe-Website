@@ -1,0 +1,71 @@
+.contact {
+  width: 100%;
+  min-height: 90vh;        /* better than fixed height */
+  background-image: url("/Assets/image/loging_bg.png");
+  background-size: cover;  /* 🔑 makes image responsive */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+
+
+.contact .child2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.contact .child2 .heading{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact .child2 .input .texti{
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.contact .child2 .input input{
+    border: 2px solid rgb(194, 66, 194);
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 290px;
+}
+
+.contact .child2 .btn{
+    width: 290px;
+    background: purple;
+    padding: 5px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contact .child2 .icons {
+  display: flex;
+  gap: 20px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.contact .child2 .icons .iconimages{
+    background-color: white;
+    border-radius: 50px;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    .contact{
+        flex-wrap: wrap;
+        padding: 0 30px;
+    }
+}

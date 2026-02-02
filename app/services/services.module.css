@@ -1,0 +1,65 @@
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.services .child1 .heading{
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+.services .child1 .heading span{
+    color: purple;
+}
+
+.services .img {
+  width: 60px;
+  height:150px;
+  /* background-color: #fff4cc; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.services .img svg {
+  font-size: 120px;
+  color: #f5b400;
+}
+
+.services .truckIcon {
+  font-size: 90px;      /* 🔥 bigger truck */
+  color: #f5b400;
+}
+.services .child2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .child2 .childa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+    text-align: center;
+}
+
+.services .child2 .childa .text{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.services .child2 .childa .para{
+    color: gray;
+}
+
+@media (max-width: 768px){
+    .services .child2{
+        flex-wrap: wrap;
+    }
+}
