@@ -1,6 +1,6 @@
 import Home from "@/app/home/Home";
 import About from "@/app/about/about";
-import Products from "@/app/Products/Products";
+import Products from "@/app/products/Products";
 import Review from "@/app/review/review";
 import Services from "@/app/services/services";
 import Contact from "@/app/contact/contact";
